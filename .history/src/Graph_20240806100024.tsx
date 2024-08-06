@@ -53,8 +53,7 @@ class Graph extends Component<IProps, {}> {
       elem.setAttribute('aggregates', `{
         "stock": "distinct count",
         "top_ask_price": "avg",
-        "top_bid_price": "avg",
-        "timestamp": "distinct count"}`)
+        }`)
       // Add more Perspective configurations here.
       elem.load(this.table);
     }

@@ -48,9 +48,6 @@ class App extends Component<{}, IState> {
         this.setState({ data: serverResponds, showGraph: true });
       });
       x++;
-      if (x>1000){
-        clearInterval(interval);
-      }
     }, 100)
   }
 
